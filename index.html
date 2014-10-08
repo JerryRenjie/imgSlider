@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>imgSlider</title>
+	<link rel="stylesheet" href="./index.css">
+	<!--[if IE 6]>
+		<style>
+			#mpage{
+				width:100%;
+				min-width:990px;
+				position:relative;
+				_width: expression(((document.compatMode && document.compatMode=='CSS1Compat')? document.documentElement.clientWidth : document.body.clientWidth) < 990? '990px' : 'auto'); 
+			}
+
+			.div-carousel-ieHack{
+				height: 241px;				
+			}
+		</style>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="container" id="mpage"> 
+
+	<!-- 图片轮播DIV 开始-->
+		<div class="div-carousel"  id="div-carousel">
+			<div class="div-pageTurn div-pre" id="div-pre"><</div>
+            <div class="div-pageTurn div-next" id="div-next">></div>
+			<a href="#" id="a-carousel"><img src="./images/lunbo_3.png" /></a>
+			<div id="div-carousel-img"></div>
+		</div>
+
+	<!-- 图片轮播DIV 结束-->
+
+
+
+	</div>
+	<script src="./libs/jquery-1.11.1.js"></script>
+	<script src="./js/imgSlider.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>
